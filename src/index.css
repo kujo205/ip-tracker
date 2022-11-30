@@ -1,0 +1,31 @@
+:root{
+  --mobile:400px;
+  --desktop:1440px;
+  --very-dark-grey:hsl(0, 0%, 17%);
+  --dark-grey:hsl(0, 0%, 67%);
+
+}
+
+.title { height: 2em; }
+.subtitle { height: calc((100% - 2em) - 45px); }
+.loading {
+  border-radius: 15px;
+  background-size: 200% 100% !important;
+  background: linear-gradient(90deg, #ddd 0px, #fff 50px, #ddd 100px);
+  animation: load 1s linear infinite;
+}
+@keyframes load {
+  0% { background-position-x: -100px; }
+  100% { background-position-x: -100%; }
+}
+
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+
